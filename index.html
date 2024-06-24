@@ -3,10 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ForecastApp</title>
+
+    <title>Umi's application</title>
   </head>
   <body>
-    <h1>Hello world</h1>
-    <footer>Build by Naomi Sirya</footer>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <h1>Nairobi</h1>
+        <p>
+          Teusday 14:49, Scattered clouds
+          <br />
+          Humidity: 665, Wind: 3.33km/h
+        </p>
+        <div>⛅</div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/umiSirya/forecastApp" target="_blank"
+            >Naomi Sirya</a
+          >
+          and is
+          <a href="https://github.com/umiSirya/forecastApp" target="_blank">
+            on GitHub</a
+          >
+          and
+          <a href="https://naomi-forecastapp.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
