@@ -15,7 +15,7 @@
   <body>
     <div class="weather-app">
       <header>
-        <form id="search-form">
+        <form class="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
@@ -27,13 +27,21 @@
         </form>
       </header>
       <main>
-        <h1>Nairobi</h1>
-        <p>
-          Teusday 14:49, Scattered clouds
-          <br />
-          Humidity: 665, Wind: 3.33km/h
-        </p>
-        <div>⛅</div>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="app-city">Nairobi</h1>
+            <p class="app-details">
+              Teusday 14:49, Scattered clouds
+              <br />
+              Humidity: <strong>665</strong>, Wind: <strong>3.33km/h</strong>
+            </p>
+          </div>
+          <div class="app-temp-containor">
+            <div class="app-icon">⛅</div>
+            <div class="app-temp">25</div>
+            <div class="app-unit">°C</div>
+          </div>
+        </div>
       </main>
       <footer>
         <p>
