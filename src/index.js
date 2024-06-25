@@ -9,13 +9,12 @@ function updateWeather(response) {
   let icon = document.querySelector("#icon");
 
   temperature.innerHTML = Math.round(response.data.temperature.current);
+  time.innerHTML = formatDate(date);
   cityElement.innerHTML = response.data.city;
   description.innerHTML = response.data.condition.description;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeed.innerHTML = `${response.data.wind.speed} km/h`;
-  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="app-icon" />`;
-
-  time.innerHTML = formatDate(date);
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
 function formatDate(date) {
